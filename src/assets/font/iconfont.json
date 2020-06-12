@@ -1,0 +1,37 @@
+{
+  "id": "1666361",
+  "name": "积分设置",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5651341",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "1526272",
+      "name": "表单",
+      "font_class": "shifouyunxuweiwanchengpandianrenwukaidan",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "681814",
+      "name": "积分商城－继续兑换",
+      "font_class": "jixuduihuan",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "755558",
+      "name": "设置",
+      "font_class": "settings",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    }
+  ]
+}

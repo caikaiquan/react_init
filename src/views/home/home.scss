@@ -1,0 +1,53 @@
+.home {
+  .site-layout .site-layout-background {
+    background: #fff;
+  }
+
+  .home-sider {
+    position: relative;
+    .logo {
+      height: 64px;
+      line-height: 64px;
+      padding: 0 24px;
+      .menu-img {
+        width: 32px;
+        height: 32px;
+      }
+      span{
+        position: absolute;
+        left: 60px;
+        &.fade{
+          opacity: 0;
+          transition: opacity 0.15s;
+        }
+        &.show{
+          opacity: 1;
+          transition: opacity 0.15s;
+        }
+        display: inline-block;
+        margin: 0 0 0 12px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 20px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .home-header {
+    .trigger {
+      padding: 0 20px;
+      font-size: 20px;
+      position: relative;
+      z-index: 10;
+    }
+    .user-info {
+      margin-right: 30px;
+      img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

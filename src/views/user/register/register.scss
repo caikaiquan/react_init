@@ -1,0 +1,21 @@
+@import '../../../assets/css/base.scss';
+.register {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../../assets/svg/TVYTbAXWheQpRcWDaDMu.svg);
+  background-repeat: no-repeat;
+  background-position: center 110px;
+  background-size: 100%;
+  .container{
+    width: 380px;
+    height: 500px;
+    @extend .position_middle;
+    .form-name{
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 20px;
+    }
+  }
+}

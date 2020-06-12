@@ -1,0 +1,52 @@
+@import '../../../assets/css/base.scss';
+.sign {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../../assets/svg/TVYTbAXWheQpRcWDaDMu.svg);
+  background-repeat: no-repeat;
+  background-position: center 110px;
+  background-size: 100%;
+  .container{
+    width: 380px;
+    height: 500px;
+    @extend .position_middle;
+    .sign-type{
+      text-align: center;
+      margin-bottom: 24px;
+      p{
+        height: 45px;
+        line-height: 45px;
+        display: inline-block;
+        margin-bottom: 0;
+        transition: color 0.3s;
+        cursor: pointer;
+        &:hover{
+          color: $mainColor;
+          transition: color 0.3s;
+        }
+        &+P{
+          margin-left: 20px;
+        }
+        &.active{
+          color: $mainColor;
+          border-bottom: 2px solid $mainColor;
+          transition: color 0.3s;
+        }
+      }
+    }
+    .form{
+      .login-form-forgot{
+        float: right;
+        cursor: pointer;
+        color: $mainColor;
+      }
+    }
+    .form-name{
+      font-size: 26px;
+      font-weight: 600;
+      color: #333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+}
