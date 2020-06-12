@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, Menu } from 'antd';
+import { Layout, Menu, Button } from 'antd';
 import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
@@ -89,6 +89,7 @@ class Home extends React.Component {
                 className: 'trigger',
                 onClick: this.toggle,
               })}
+              <Button type="primary">Primary Button</Button>
               <div className='user-info fr'>
                 <img src={headerUrl} alt="" />
                 Serati Ma

@@ -14,7 +14,6 @@ import './index.scss';
 import './assets/css/base.scss'
 import './assets/css/public.css'
 import './assets/font/iconfont.css'
-import 'antd/dist/antd.css';
 
 /**
  * 引入组件文件
