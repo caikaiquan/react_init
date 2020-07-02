@@ -6,7 +6,7 @@ class Demo extends React.Component{
   render(){
     return(
       <div className="demo">
-        
+        这里是demo
       </div>
     )
   }

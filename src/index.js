@@ -9,7 +9,7 @@ import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import { PersistGate } from 'redux-persist/lib/integration/react';
-import { HashRouter, Route, Redirect, Switch } from 'react-router-dom'
+import { HashRouter, Switch } from 'react-router-dom'
 import './index.scss';
 import './assets/css/base.scss'
 import './assets/css/public.css'
@@ -18,11 +18,13 @@ import './assets/font/iconfont.css'
 /**
  * 引入组件文件
  * **/
-import NoFind from './views/404/404'
-import App from './views/App/App.js'
-import Demo from './views/Demo/demo'
-import Home from './views/home/home'
-import Login from './views/user/login/login'
+// import NoFind from './views/404/404'
+// import App from './views/App/App.js'
+// import Demo from './views/Demo/demo'
+// import Home from './views/home/home'
+// import Login from './views/user/login/login'
+import FrontendAuth from './component/FrontendAuth/FrontendAuth'
+import routerConfig from './component/FrontendAuth/router.config'
 import BaseParam from './plugins/config'
 
 
@@ -50,12 +52,13 @@ ReactDOM.render(
     <PersistGate loading={null} persistor={persistor}>
       <HashRouter >
         <Switch>
-          <Route path='/demo' component={Demo} />
+          {/* <Route path='/demo' component={Demo} />
           <Route path='/App' component={App} />
           <Route path='/home' component={Home} />
           <Route path='/login' component={Login} />
           <Route path='/404' component={NoFind} />
-          <Redirect to='/404' />
+          <Redirect to='/404' /> */}
+          <FrontendAuth config={routerConfig} />
         </Switch>
       </HashRouter >
     </PersistGate>
