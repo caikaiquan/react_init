@@ -36,7 +36,9 @@ console.log(BaseParam)
 const persistConfig = {
   key: 'root',
   storage: storage,
-  stateReconciler: autoMergeLevel2 // 查看 'Merge Process' 部分的具体情况
+  stateReconciler: autoMergeLevel2, // 查看 'Merge Process' 部分的具体情况
+  // blacklist: ['navigation'] // navigation不会被存入缓存中，其他会，适用于少部分数据需要实时更新
+  // whitelist: ['navigation'] // navigation会存入缓存，其他不会存，适用于大多数数据并不会实时从后台拿数据
 };
 const myPersistReducer = persistReducer(persistConfig, reducer)
 const store = createStore(myPersistReducer, composeWithDevTools(
